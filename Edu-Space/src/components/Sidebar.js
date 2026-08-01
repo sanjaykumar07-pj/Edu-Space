@@ -64,7 +64,7 @@ export default function Sidebar() {
   return (
     <aside className="fixed left-0 top-0 h-full w-[240px] bg-surface-container-lowest text-on-surface z-50 flex flex-col shadow-2xl border-r border-surface-container">
       <div className="h-[64px] px-6 flex items-center gap-3 shrink-0 border-b border-surface-container">
-        <img src="/logo.png" alt="Edu-Space Logo" className="w-8 h-8 object-contain" />
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuChneJwOhhP0NDgKMg1HHwb7EQWPxHka2xdxO1CnQRDBE6qak6sNwfmN8LO2kU9dMrwtNap0_5TA9n8d-2nKGH81OR5WW5A8dhiwOPXWQatqaD49tDd5bVVoF55RED_NofchdHVknJWZ2MU58D08teycbsnGkTaY6CE2Zc_eWzCzhhgDaYCHKiZC3djngZQndIKg_3B8TZdDfN32GDVgvdFqOuB7IKPeSMjXHh-7UfCleam-YikBLCSRg" alt="Edu-Space Logo" className="w-8 h-8 object-contain" />
         <span className="font-headline-sm text-on-surface tracking-tight truncate">Edu-Space</span>
       </div>
       
