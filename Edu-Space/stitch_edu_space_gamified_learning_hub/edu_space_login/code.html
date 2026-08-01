@@ -1,0 +1,100 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={theme:{extend:{"colors":{"background":"#f8f9fb","primary":"#3525cd","surface":"#f8f9fb","on-surface":"#191c1e"}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"></head><body class="bg-background font-body-md"><main class="flex min-h-screen items-center justify-center p-gutter"><div class="flex flex-col w-full min-h-[calc(100vh-theme(spacing.gutter)*2)] items-center justify-center relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-surface-container via-surface-bright to-primary-fixed opacity-40 -z-10 blur-3xl pointer-events-none"></div>
+<div class="w-full max-w-2xl bg-surface-container-lowest rounded-[2rem] shadow-2xl overflow-hidden relative">
+<div class="absolute top-0 right-0 p-6">
+<div class="w-24 h-24 bg-secondary-fixed/30 rounded-full blur-2xl"></div>
+</div>
+<div class="absolute bottom-0 left-0 p-6">
+<div class="w-32 h-32 bg-primary-fixed/30 rounded-full blur-2xl"></div>
+</div>
+<div class="p-8 md:p-12 flex flex-col items-center relative z-10">
+<div class="mb-10 text-center">
+<div class="w-32 h-32 mx-auto mb-6 flex items-center justify-center bg-surface-container-lowest rounded-full shadow-sm">
+<img alt="Edu-Space Logo" class="w-24 h-24 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChneJwOhhP0NDgKMg1HHwb7EQWPxHka2xdxO1CnQRDBE6qak6sNwfmN8LO2kU9dMrwtNap0_5TA9n8d-2nKGH81OR5WW5A8dhiwOPXWQatqaD49tDd5bVVoF55RED_NofchdHVknJWZ2MU58D08teycbsnGkTaY6CE2Zc_eWzCzhhgDaYCHKiZC3djngZQndIKg_3B8TZdDfN32GDVgvdFqOuB7IKPeSMjXHh-7UfCleam-YikBLCSRg">
+</div>
+<h1 class="font-headline-xl text-on-surface mb-3">Welcome to Edu-Space</h1>
+<p class="font-body-lg text-on-surface-variant">Your Space to Learn, Play &amp; Build.</p>
+</div>
+<div class="w-full space-y-8">
+<div>
+<h2 class="font-headline-sm text-on-surface mb-4 text-center">Who are you?</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4" id="role-selector">
+<button class="role-card relative group flex flex-col items-center text-center p-6 bg-surface-container-lowest border-2 border-surface-container-high rounded-xl transition-all duration-300 hover:border-primary hover:bg-primary-fixed/10 hover:-translate-y-1 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2" data-role="admin">
+<div class="w-16 h-16 rounded-full bg-secondary-fixed flex items-center justify-center mb-4 text-on-secondary-fixed transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">admin_panel_settings</span>
+</div>
+<h3 class="font-label-md text-on-surface mb-1">Admin</h3>
+<p class="font-body-sm text-on-surface-variant">Manage the school</p>
+<div class="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity text-primary">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</button>
+<button class="role-card relative group flex flex-col items-center text-center p-6 bg-surface-container-lowest border-2 border-surface-container-high rounded-xl transition-all duration-300 hover:border-primary hover:bg-primary-fixed/10 hover:-translate-y-1 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2" data-role="teacher">
+<div class="w-16 h-16 rounded-full bg-primary-fixed flex items-center justify-center mb-4 text-on-primary-fixed transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">co_present</span>
+</div>
+<h3 class="font-label-md text-on-surface mb-1">Teacher</h3>
+<p class="font-body-sm text-on-surface-variant">Guide your classes</p>
+<div class="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity text-primary">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</button>
+<button class="role-card relative group flex flex-col items-center text-center p-6 bg-surface-container-lowest border-2 border-surface-container-high rounded-xl transition-all duration-300 hover:border-primary hover:bg-primary-fixed/10 hover:-translate-y-1 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2" data-role="student">
+<div class="w-16 h-16 rounded-full bg-tertiary-fixed flex items-center justify-center mb-4 text-on-tertiary-fixed transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">school</span>
+</div>
+<h3 class="font-label-md text-on-surface mb-1">Student</h3>
+<p class="font-body-sm text-on-surface-variant">Ready to learn</p>
+<div class="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity text-primary">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</button>
+</div>
+</div>
+<div class="w-full h-px bg-surface-container-high"></div>
+<form class="space-y-6" onsubmit="event.preventDefault();">
+<div>
+<label class="block font-label-md text-on-surface mb-2" for="username">Display Name</label>
+<div class="relative">
+<div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-outline">
+<span class="material-symbols-outlined text-xl">person</span>
+</div>
+<input class="w-full bg-surface-container-lowest border-2 border-surface-container-high rounded-xl py-3 pl-12 pr-4 font-body-md text-on-surface placeholder-outline-variant focus:outline-none focus:border-primary focus:ring-4 focus:ring-primary-fixed/50 transition-all" id="username" placeholder="Enter your full name" type="text">
+</div>
+</div>
+<button class="w-full py-4 bg-primary text-on-primary font-label-md rounded-xl hover:bg-primary-container hover:text-on-primary-container focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-colors shadow-md hover:shadow-lg flex items-center justify-center gap-2 group" type="submit">
+<span>Continue to Dashboard</span>
+<span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const roleCards = document.querySelectorAll('.role-card');
+    
+    roleCards.forEach(card => {
+      card.addEventListener('click', (e) => {
+        // Prevent form submission if inside a form (though it's outside here)
+        e.preventDefault();
+        
+        // Remove active state from all
+        roleCards.forEach(c => {
+          c.classList.remove('border-primary', 'bg-primary-fixed/10', 'ring-2', 'ring-primary', 'ring-offset-2');
+          c.classList.add('border-surface-container-high');
+          const checkIcon = c.querySelector('.absolute');
+          checkIcon.classList.replace('opacity-100', 'opacity-0');
+        });
+        
+        // Add active state to clicked
+        card.classList.remove('border-surface-container-high');
+        card.classList.add('border-primary', 'bg-primary-fixed/10', 'ring-2', 'ring-primary', 'ring-offset-2');
+        const checkIcon = card.querySelector('.absolute');
+        checkIcon.classList.replace('opacity-0', 'opacity-100');
+      });
+    });
+  });
+</script></main></body></html>

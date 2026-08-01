@@ -1,0 +1,30 @@
+{
+  "defaults": {
+    "project": 1,
+    "env": 1
+  },
+  "actives": {
+    "project": 1,
+    "env": 1
+  },
+  "projects": [
+    {
+      "idx": 1,
+      "id": "58391000000013051",
+      "name": "Edu-space",
+      "domain": {
+        "id": "50044563570",
+        "name": "edu-space-60081086750.development"
+      },
+      "timezone": "Asia/Kolkata",
+      "env": [
+        {
+          "idx": 1,
+          "id": "60081086750",
+          "name": "Development",
+          "type": 3
+        }
+      ]
+    }
+  ]
+}

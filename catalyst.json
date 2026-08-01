@@ -1,0 +1,14 @@
+{
+  "appsail": [
+    {
+      "source": "appsail",
+      "name": "pjfest"
+    }
+  ],
+  "slate": [
+    {
+      "name": "Edu-Space",
+      "source": "E:\\edu-space\\Edu-Space"
+    }
+  ]
+}

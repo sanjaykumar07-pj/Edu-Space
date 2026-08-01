@@ -1,0 +1,64 @@
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={theme:{extend:{"colors":{"surface-container-highest":"#e1e2e4","inverse-surface":"#2e3132","surface-bright":"#f8f9fb","secondary-container":"#fea619","surface-container":"#edeef0","primary-fixed-dim":"#c3c0ff","surface-container-low":"#f2f4f6","surface-tint":"#4d44e3","on-tertiary-container":"#67f4b7","tertiary":"#005338","secondary-fixed-dim":"#ffb95f","surface-variant":"#e1e2e4","secondary-fixed":"#ffddb8","on-secondary":"#ffffff","on-primary-fixed":"#0f0069","primary":"#3525cd","on-secondary-fixed-variant":"#653e00","on-surface-variant":"#464555","primary-container":"#4f46e5","error-container":"#ffdad6","secondary":"#855300","outline":"#777587","on-primary-container":"#dad7ff","tertiary-fixed-dim":"#4edea3","on-tertiary-fixed-variant":"#005236","inverse-primary":"#c3c0ff","tertiary-container":"#006e4b","surface-container-lowest":"#ffffff","surface":"#f8f9fb","on-secondary-container":"#684000","on-primary-fixed-variant":"#3323cc","on-error":"#ffffff","background":"#f8f9fb","on-background":"#191c1e","inverse-on-surface":"#f0f1f3","error":"#ba1a1a","tertiary-fixed":"#6ffbbe","surface-dim":"#d9dadc","on-primary":"#ffffff","outline-variant":"#c7c4d8","surface-container-high":"#e7e8ea","primary-fixed":"#e2dfff","on-surface":"#191c1e","on-error-container":"#93000a","on-tertiary-fixed":"#002113","on-tertiary":"#ffffff","on-secondary-fixed":"#2a1700"}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/></head><body class="bg-background font-body-md text-on-surface"><main class="min-h-screen flex items-center justify-center p-margin_mobile"><div class="flex flex-col w-full min-h-screen relative overflow-hidden bg-gradient-to-br from-primary-fixed to-primary-container items-center justify-center -mt-topbar_height">
+<div class="absolute inset-0 pointer-events-none opacity-20">
+<svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="40" id="grid" patternunits="userSpaceOnUse" width="40">
+<path class="text-on-primary-container" d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" stroke-width="1"></path>
+</pattern>
+</defs>
+<rect fill="url(#grid)" height="100%" width="100%"></rect>
+</svg>
+</div>
+<div class="relative w-full max-w-[420px] bg-surface-container-lowest rounded-[24px] shadow-2xl p-8 flex flex-col gap-8 z-10 mx-margin_mobile">
+<div class="flex justify-between items-start w-full">
+<a class="flex items-center gap-2 text-label-md font-label-md text-on-surface-variant hover:text-primary transition-colors group" href="#">
+<span class="material-symbols-outlined text-[16px] group-hover:-translate-x-1 transition-transform">arrow_back</span>
+                Back
+            </a>
+<div class="flex items-center gap-2 bg-primary-fixed text-on-primary-fixed px-3 py-1 rounded-full">
+<span class="material-symbols-outlined text-[14px]">school</span>
+<span class="text-label-md font-label-md">Student Role</span>
+</div>
+</div>
+<div class="flex flex-col gap-2 items-center text-center">
+<div class="w-20 h-20 rounded-full bg-secondary-fixed flex items-center justify-center mb-2 shadow-md">
+<span class="material-symbols-outlined text-[40px] text-on-secondary-fixed">face_6</span>
+</div>
+<h1 class="text-headline-md font-headline-md text-on-surface">Welcome Back!</h1>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Ready to continue your learning journey?</p>
+</div>
+<form class="flex flex-col gap-5 w-full">
+<div class="flex flex-col gap-1.5">
+<label class="text-label-md font-label-md text-on-surface" for="email">School Email</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">mail</span>
+<input class="w-full bg-surface text-on-surface text-body-md font-body-md rounded-xl pl-12 pr-4 py-3 border border-outline-variant focus:border-primary focus:ring-2 focus:ring-primary-fixed focus:outline-none transition-all placeholder:text-outline-variant" id="email" placeholder="your.name@school.edu" type="email"/>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between items-center">
+<label class="text-label-md font-label-md text-on-surface" for="password">Password</label>
+<a class="text-label-md font-label-md text-primary hover:text-primary-container transition-colors" href="#">Forgot it?</a>
+</div>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">lock</span>
+<input class="w-full bg-surface text-on-surface text-body-md font-body-md rounded-xl pl-12 pr-4 py-3 border border-outline-variant focus:border-primary focus:ring-2 focus:ring-primary-fixed focus:outline-none transition-all placeholder:text-outline-variant" id="password" placeholder="••••••••" type="password"/>
+</div>
+</div>
+<button class="w-full bg-secondary-container text-on-secondary-container hover:bg-secondary-fixed hover:shadow-lg transition-all text-body-md font-headline-sm py-3 rounded-xl mt-2 flex items-center justify-center gap-2 group" type="button">
+                Sign In 
+                <span class="material-symbols-outlined text-[20px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</form>
+<div class="flex flex-col items-center gap-4 pt-4 border-t border-surface-variant w-full">
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+                New here? <a class="text-primary font-label-md hover:underline" href="#">Create an account</a>
+</p>
+<div class="flex items-center gap-2 text-outline text-label-md font-label-md">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+                Secure Login via Edu-Space
+            </div>
+</div>
+</div>
+</div></main></body></html>

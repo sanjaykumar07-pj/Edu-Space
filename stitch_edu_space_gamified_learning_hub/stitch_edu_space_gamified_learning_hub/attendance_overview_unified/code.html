@@ -1,0 +1,303 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-tertiary-fixed-variant":"#005236","surface-dim":"#d9dadc","surface-container-low":"#f2f4f6","secondary-fixed":"#ffddb8","error-container":"#ffdad6","background":"#f8f9fb","surface-container-highest":"#e1e2e4","surface-container":"#edeef0","error":"#ba1a1a","on-secondary-container":"#684000","secondary":"#855300","primary-fixed-dim":"#c3c0ff","tertiary-fixed-dim":"#4edea3","surface-container-lowest":"#ffffff","on-surface":"#191c1e","inverse-primary":"#c3c0ff","surface-tint":"#4d44e3","surface":"#f8f9fb","on-background":"#191c1e","secondary-fixed-dim":"#ffb95f","inverse-on-surface":"#f0f1f3","on-surface-variant":"#464555","primary":"#3525cd","on-primary-container":"#dad7ff","on-secondary-fixed":"#2a1700","on-secondary":"#ffffff","surface-bright":"#f8f9fb","on-tertiary-container":"#67f4b7","on-secondary-fixed-variant":"#653e00","on-primary-fixed":"#0f0069","on-primary":"#ffffff","on-error":"#ffffff","surface-container-high":"#e7e8ea","inverse-surface":"#2e3132","surface-variant":"#e1e2e4","primary-fixed":"#e2dfff","on-error-container":"#93000a","tertiary":"#005338","outline":"#777587","on-tertiary-fixed":"#002113","tertiary-container":"#006e4b","tertiary-fixed":"#6ffbbe","outline-variant":"#c7c4d8","on-tertiary":"#ffffff","secondary-container":"#fea619","on-primary-fixed-variant":"#3323cc","primary-container":"#4f46e5"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin_desktop":"40px","container_max_width":"1200px","topbar_height":"64px","margin_mobile":"16px","gutter":"24px","sidebar_width":"240px"},"fontFamily":{"headline-xl-mobile":["Inter"],"headline-sm":["Inter"],"headline-lg":["Inter"],"headline-md":["Inter"],"label-md":["Inter"],"body-md":["Inter"],"headline-lg-mobile":["Inter"],"body-sm":["Inter"],"body-lg":["Inter"],"headline-xl":["Inter"]},"fontSize":{"headline-xl-mobile":["32px",{"lineHeight":"40px","fontWeight":"800"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"headline-lg":["30px",{"lineHeight":"38px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"700"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","fontWeight":"600"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","fontWeight":"700"}],"body-sm":["14px",{"lineHeight":"20px","fontWeight":"400"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"headline-xl":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"800"}]}}}}</script><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"></head><body class="bg-background font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-[sidebar_width] bg-surface-container-lowest text-on-surface z-50 flex flex-col border-r border-surface-container shadow-sm"><div class="h-topbar_height px-6 flex items-center gap-3 shrink-0 border-b border-surface-container"><span class="material-symbols-outlined text-primary">admin_panel_settings</span><span class="font-headline-sm text-on-surface tracking-tight">Edu-Space Admin</span></div><nav class="flex-1 px-4 py-6 space-y-1 overflow-y-auto" data-active-classes="bg-primary text-white font-bold"><a class="flex items-center px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="dashboard" href="#">Dashboard</a><a class="flex items-center px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="manage-teachers" href="#">Manage Teachers</a><a class="flex items-center px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="manage-classes" href="#">Manage Classes</a><a aria-current="page" class="flex items-center px-4 py-3 rounded-xl transition-all bg-primary text-white font-bold" data-path="attendance-overview" href="#">Attendance Overview</a><a class="flex items-center px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="academic-analytics" href="#">Academic Analytics</a><a class="flex items-center px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="all-events" href="#">All Events</a><a class="flex items-center px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="all-meetings" href="#">All Meetings</a><a class="flex items-center px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="reports" href="#">Reports</a><a class="flex items-center px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="settings" href="#">Settings</a><a class="flex items-center px-4 py-3 rounded-xl text-error hover:bg-error/10 transition-all mt-8" data-path="logout" href="#">Logout</a></nav><div class="p-6 mt-auto border-t border-surface-container"><div class="bg-primary text-white text-center py-2 rounded-full text-xs font-bold tracking-widest uppercase">ADMIN MODE</div></div></aside><div class="pl-[sidebar_width]"><header class="fixed top-0 left-[sidebar_width] right-0 h-topbar_height bg-surface/80 backdrop-blur-xl z-40 flex items-center justify-between px-margin_desktop border-b border-surface-container"><h1 class="font-headline-sm text-on-surface">Dashboard</h1><div class="flex items-center gap-6"><button class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors p-2 rounded-full hover:bg-surface-container">notifications</button><div class="flex items-center gap-3 pl-2 border-l border-surface-container"><img alt="Admin Profile" class="w-9 h-9 rounded-full object-cover ring-2 ring-primary/20" src="https://lh3.googleusercontent.com/aida/AP1WRLvcxtooN-sQML1Cebe7T-KmFr0ARVFGREqIyofOjVc5gjU8diU3fPKI8PIIgsi2SPNXPPn0SDpqjp3DbAXJObWrtLdX9YDxFceD6EaQ6tujPOEb3oIfAhebNw8F1AmNUJfiG0sFXKetdKBWYX7J_gcyxsiLo4i49jCGZqzJDsYKV0FnISVptWnKLi9y9DmuCGWtNn2h8cKqe9CARpSE8Cgw-onPXrdGZO51n-s0okQ0uoq7Jlrr9hjdiS5y"></div></div></header><main class="relative pt-topbar_height min-h-screen"><div class="max-w-container_max_width mx-auto p-margin_desktop"><div class="flex flex-col w-full gap-8">
+<!-- Header / Filters -->
+<div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+<div class="flex flex-col">
+<h2 class="font-headline-lg text-on-surface">Platform Attendance</h2>
+<p class="font-body-sm text-on-surface-variant">Monitor daily attendance trends across all active classes.</p>
+</div>
+<div class="flex items-center gap-3 w-full sm:w-auto bg-surface-container rounded-xl p-1.5 shadow-sm">
+<div class="relative w-full sm:w-48">
+<select class="w-full appearance-none bg-surface-container-lowest font-body-sm text-on-surface py-2 pl-4 pr-10 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-1 focus:ring-offset-surface-container transition-all cursor-pointer">
+<option>All Classes</option>
+<option>Calculus II</option>
+<option>Art History</option>
+<option>Physics 101</option>
+<option>Creative Writing</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+<div class="h-6 w-[1px] bg-outline-variant/30 hidden sm:block"></div>
+<div class="relative w-full sm:w-48">
+<div class="flex items-center bg-surface-container-lowest rounded-lg overflow-hidden focus-within:ring-2 focus-within:ring-primary focus-within:ring-offset-1 focus-within:ring-offset-surface-container transition-all">
+<span class="material-symbols-outlined text-on-surface-variant pl-3 pr-2 py-2">calendar_month</span>
+<input class="w-full bg-transparent font-body-sm text-on-surface py-2 pr-4 focus:outline-none cursor-pointer" readonly="" type="text" value="Oct 1 - Oct 31, 2023">
+</div>
+</div>
+</div>
+</div>
+<!-- Summary Stats -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Overall -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-[0_4px_20px_rgba(0,0,0,0.05)] relative overflow-hidden group">
+<div class="absolute -right-6 -top-6 w-24 h-24 bg-primary/5 rounded-full blur-xl group-hover:scale-150 transition-transform duration-700"></div>
+<div class="flex justify-between items-start mb-4 relative z-10">
+<div class="p-2 bg-primary/10 rounded-lg text-primary">
+<span class="material-symbols-outlined">donut_large</span>
+</div>
+<span class="inline-flex items-center gap-1 text-tertiary font-label-md bg-tertiary-container/20 px-2 py-1 rounded-full">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> +2.4%
+        </span>
+</div>
+<div class="relative z-10">
+<h3 class="font-headline-xl text-on-surface mb-1">94%</h3>
+<p class="font-body-sm text-on-surface-variant">Overall Attendance</p>
+</div>
+<!-- Mini Sparkline -->
+<div class="mt-4 h-10 w-full relative z-10">
+<svg class="w-full h-full overflow-visible preserve-3d" preserveAspectRatio="none" viewBox="0 0 100 30">
+<path class="text-primary opacity-50" d="M0,25 L10,22 L20,24 L30,18 L40,20 L50,15 L60,18 L70,10 L80,12 L90,5 L100,8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+<path class="opacity-20" d="M0,25 L10,22 L20,24 L30,18 L40,20 L50,15 L60,18 L70,10 L80,12 L90,5 L100,8 L100,30 L0,30 Z" fill="url(#spark-grad-1)"></path>
+<defs>
+<linearGradient id="spark-grad-1" x1="0" x2="0" y1="0" y2="1">
+<stop class="text-primary" offset="0%" stop-color="currentColor"></stop>
+<stop offset="100%" stop-color="transparent"></stop>
+</linearGradient>
+</defs>
+</svg>
+</div>
+</div>
+<!-- Most Consistent -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-[0_4px_20px_rgba(0,0,0,0.05)] relative overflow-hidden group">
+<div class="absolute -right-6 -bottom-6 w-32 h-32 bg-secondary-container/10 rounded-full blur-2xl group-hover:bg-secondary-container/20 transition-colors duration-500"></div>
+<div class="flex justify-between items-start mb-4 relative z-10">
+<div class="p-2 bg-secondary-container/20 rounded-lg text-secondary">
+<span class="material-symbols-outlined">workspace_premium</span>
+</div>
+</div>
+<div class="relative z-10">
+<p class="font-body-sm text-on-surface-variant mb-1 uppercase tracking-wider">Most Consistent</p>
+<h3 class="font-headline-md text-on-surface line-clamp-1">Art History</h3>
+<p class="font-label-md text-secondary mt-2 flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">verified</span> 99.2% Rate
+        </p>
+</div>
+</div>
+<!-- Alert -->
+<div class="bg-error/5 border border-error/20 rounded-2xl p-6 shadow-[0_4px_20px_rgba(186,26,26,0.05)] relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4">
+<span class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-error opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-error"></span>
+</span>
+</div>
+<div class="flex justify-between items-start mb-4 relative z-10">
+<div class="p-2 bg-error/10 rounded-lg text-error">
+<span class="material-symbols-outlined">warning</span>
+</div>
+</div>
+<div class="relative z-10">
+<p class="font-body-sm text-error uppercase tracking-wider font-bold mb-1">Low Attendance Alert</p>
+<h3 class="font-headline-md text-on-surface line-clamp-1">Calculus II</h3>
+<p class="font-label-md text-error mt-2 flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">trending_down</span> Dropped below 75%
+        </p>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<!-- Data Table -->
+<div class="lg:col-span-2 bg-surface-container-lowest rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] overflow-hidden flex flex-col">
+<div class="p-6 border-b border-surface-container flex justify-between items-center bg-surface-container-lowest sticky top-0 z-10">
+<h3 class="font-headline-sm text-on-surface">Class Performance</h3>
+<button class="font-label-md text-primary hover:text-primary-fixed-variant transition-colors flex items-center gap-1">
+          Export <span class="material-symbols-outlined text-[16px]">download</span>
+</button>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container/30">
+<th class="p-4 font-label-md text-on-surface-variant uppercase tracking-wider">Class Name</th>
+<th class="p-4 font-label-md text-on-surface-variant uppercase tracking-wider">Teacher</th>
+<th class="p-4 font-label-md text-on-surface-variant uppercase tracking-wider text-right">Sessions</th>
+<th class="p-4 font-label-md text-on-surface-variant uppercase tracking-wider text-right">Avg Rate</th>
+<th class="p-4 font-label-md text-on-surface-variant uppercase tracking-wider text-center">Trend</th>
+</tr>
+</thead>
+<tbody class="font-body-sm divide-y divide-surface-container/50">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container/20 transition-colors group">
+<td class="p-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-primary/10 text-primary flex items-center justify-center font-bold">AH</div>
+<span class="font-headline-sm text-base text-on-surface group-hover:text-primary transition-colors">Art History</span>
+</div>
+</td>
+<td class="p-4 text-on-surface-variant">Dr. E. Vance</td>
+<td class="p-4 text-right text-on-surface">24</td>
+<td class="p-4 text-right">
+<div class="flex items-center justify-end gap-2">
+<span class="font-bold text-on-surface">99.2%</span>
+<div class="w-16 h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-tertiary rounded-full w-[99%]"></div>
+</div>
+</div>
+</td>
+<td class="p-4 text-center">
+<span class="material-symbols-outlined text-tertiary">arrow_upward</span>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container/20 transition-colors group">
+<td class="p-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-primary/10 text-primary flex items-center justify-center font-bold">CW</div>
+<span class="font-headline-sm text-base text-on-surface group-hover:text-primary transition-colors">Creative Writing</span>
+</div>
+</td>
+<td class="p-4 text-on-surface-variant">Prof. M. Atwood</td>
+<td class="p-4 text-right text-on-surface">18</td>
+<td class="p-4 text-right">
+<div class="flex items-center justify-end gap-2">
+<span class="font-bold text-on-surface">96.5%</span>
+<div class="w-16 h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-tertiary rounded-full w-[96%]"></div>
+</div>
+</div>
+</td>
+<td class="p-4 text-center">
+<span class="material-symbols-outlined text-tertiary">arrow_upward</span>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container/20 transition-colors group">
+<td class="p-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-primary/10 text-primary flex items-center justify-center font-bold">PH</div>
+<span class="font-headline-sm text-base text-on-surface group-hover:text-primary transition-colors">Physics 101</span>
+</div>
+</td>
+<td class="p-4 text-on-surface-variant">Dr. S. Hawking</td>
+<td class="p-4 text-right text-on-surface">32</td>
+<td class="p-4 text-right">
+<div class="flex items-center justify-end gap-2">
+<span class="font-bold text-on-surface">88.0%</span>
+<div class="w-16 h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full w-[88%]"></div>
+</div>
+</div>
+</td>
+<td class="p-4 text-center">
+<span class="material-symbols-outlined text-on-surface-variant">remove</span>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-error/5 transition-colors group bg-error/5">
+<td class="p-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-error/10 text-error flex items-center justify-center font-bold">C2</div>
+<span class="font-headline-sm text-base text-error">Calculus II</span>
+</div>
+</td>
+<td class="p-4 text-on-surface-variant">Prof. I. Newton</td>
+<td class="p-4 text-right text-on-surface">28</td>
+<td class="p-4 text-right">
+<div class="flex items-center justify-end gap-2">
+<span class="font-bold text-error">72.4%</span>
+<div class="w-16 h-1.5 bg-error-container rounded-full overflow-hidden">
+<div class="h-full bg-error rounded-full w-[72%]"></div>
+</div>
+</div>
+</td>
+<td class="p-4 text-center">
+<span class="material-symbols-outlined text-error">arrow_downward</span>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container/20 transition-colors group">
+<td class="p-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-primary/10 text-primary flex items-center justify-center font-bold">CS</div>
+<span class="font-headline-sm text-base text-on-surface group-hover:text-primary transition-colors">Intro to CS</span>
+</div>
+</td>
+<td class="p-4 text-on-surface-variant">A. Lovelace</td>
+<td class="p-4 text-right text-on-surface">40</td>
+<td class="p-4 text-right">
+<div class="flex items-center justify-end gap-2">
+<span class="font-bold text-on-surface">91.8%</span>
+<div class="w-16 h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-tertiary rounded-full w-[91%]"></div>
+</div>
+</div>
+</td>
+<td class="p-4 text-center">
+<span class="material-symbols-outlined text-tertiary">arrow_upward</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Heatmap -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-[0_4px_20px_rgba(0,0,0,0.05)] flex flex-col h-full">
+<div class="flex justify-between items-center mb-6">
+<div>
+<h3 class="font-headline-sm text-on-surface">Activity Heatmap</h3>
+<p class="font-label-md text-on-surface-variant">October 2023</p>
+</div>
+<div class="flex gap-1 items-center font-label-md text-on-surface-variant">
+<span>Less</span>
+<div class="w-3 h-3 rounded-sm bg-surface-container-high"></div>
+<div class="w-3 h-3 rounded-sm bg-tertiary-container/30"></div>
+<div class="w-3 h-3 rounded-sm bg-tertiary-container/60"></div>
+<div class="w-3 h-3 rounded-sm bg-tertiary"></div>
+<span>More</span>
+</div>
+</div>
+<!-- Calendar Grid -->
+<div class="flex-1 grid grid-cols-7 gap-2 auto-rows-fr">
+<!-- Days Header -->
+<div class="text-center font-label-md text-on-surface-variant pb-2">M</div>
+<div class="text-center font-label-md text-on-surface-variant pb-2">T</div>
+<div class="text-center font-label-md text-on-surface-variant pb-2">W</div>
+<div class="text-center font-label-md text-on-surface-variant pb-2">T</div>
+<div class="text-center font-label-md text-on-surface-variant pb-2">F</div>
+<div class="text-center font-label-md text-on-surface-variant pb-2 opacity-50">S</div>
+<div class="text-center font-label-md text-on-surface-variant pb-2 opacity-50">S</div>
+<!-- Cells (Simulated month data) -->
+<!-- Week 1 -->
+<div class="w-full aspect-square rounded-md bg-tertiary-container/60 hover:ring-2 ring-primary transition-all cursor-pointer relative group" title="Oct 2: 92%"></div>
+<div class="w-full aspect-square rounded-md bg-tertiary hover:ring-2 ring-primary transition-all cursor-pointer" title="Oct 3: 98%"></div>
+<div class="w-full aspect-square rounded-md bg-tertiary-container/30 hover:ring-2 ring-primary transition-all cursor-pointer" title="Oct 4: 85%"></div>
+<div class="w-full aspect-square rounded-md bg-tertiary hover:ring-2 ring-primary transition-all cursor-pointer" title="Oct 5: 95%"></div>
+<div class="w-full aspect-square rounded-md bg-tertiary-container/60 hover:ring-2 ring-primary transition-all cursor-pointer" title="Oct 6: 90%"></div>
+<div class="w-full aspect-square rounded-md bg-surface-container-high hover:ring-2 ring-primary transition-all cursor-pointer opacity-50"></div>
+<div class="w-full aspect-square rounded-md bg-surface-container-high hover:ring-2 ring-primary transition-all cursor-pointer opacity-50"></div>
+<!-- Week 2 -->
+<div class="w-full aspect-square rounded-md bg-tertiary hover:ring-2 ring-primary transition-all cursor-pointer"></div>
+<div class="w-full aspect-square rounded-md bg-tertiary hover:ring-2 ring-primary transition-all cursor-pointer"></div>
+<div class="w-full aspect-square rounded-md bg-tertiary-container/60 hover:ring-2 ring-primary transition-all cursor-pointer"></div>
+<div class="w-full aspect-square rounded-md bg-surface-container-high hover:ring-2 ring-primary transition-all cursor-pointer border border-error/50 relative">
+<span class="absolute -top-1 -right-1 w-2 h-2 bg-error rounded-full"></span>
+</div>
+<div class="w-full aspect-square rounded-md bg-tertiary-container/30 hover:ring-2 ring-primary transition-all cursor-pointer"></div>
+<div class="w-full aspect-square rounded-md bg-surface-container-high hover:ring-2 ring-primary transition-all cursor-pointer opacity-50"></div>
+<div class="w-full aspect-square rounded-md bg-surface-container-high hover:ring-2 ring-primary transition-all cursor-pointer opacity-50"></div>
+<!-- Week 3 -->
+<div class="w-full aspect-square rounded-md bg-tertiary-container/60 hover:ring-2 ring-primary transition-all cursor-pointer"></div>
+<div class="w-full aspect-square rounded-md bg-tertiary hover:ring-2 ring-primary transition-all cursor-pointer"></div>
+<div class="w-full aspect-square rounded-md bg-tertiary hover:ring-2 ring-primary transition-all cursor-pointer"></div>
+<div class="w-full aspect-square rounded-md bg-tertiary hover:ring-2 ring-primary transition-all cursor-pointer"></div>
+<div class="w-full aspect-square rounded-md bg-tertiary-container/60 hover:ring-2 ring-primary transition-all cursor-pointer"></div>
+<div class="w-full aspect-square rounded-md bg-surface-container-high hover:ring-2 ring-primary transition-all cursor-pointer opacity-50"></div>
+<div class="w-full aspect-square rounded-md bg-surface-container-high hover:ring-2 ring-primary transition-all cursor-pointer opacity-50"></div>
+<!-- Week 4 -->
+<div class="w-full aspect-square rounded-md bg-tertiary-container/30 hover:ring-2 ring-primary transition-all cursor-pointer"></div>
+<div class="w-full aspect-square rounded-md bg-tertiary-container/60 hover:ring-2 ring-primary transition-all cursor-pointer"></div>
+<div class="w-full aspect-square rounded-md bg-tertiary hover:ring-2 ring-primary transition-all cursor-pointer"></div>
+<div class="w-full aspect-square rounded-md bg-surface-container-high hover:ring-2 ring-primary transition-all cursor-pointer"></div>
+<div class="w-full aspect-square rounded-md bg-surface-container-high hover:ring-2 ring-primary transition-all cursor-pointer"></div>
+<div class="w-full aspect-square rounded-md bg-surface-container-high hover:ring-2 ring-primary transition-all cursor-pointer opacity-50"></div>
+<div class="w-full aspect-square rounded-md bg-surface-container-high hover:ring-2 ring-primary transition-all cursor-pointer opacity-50"></div>
+</div>
+<div class="mt-6 pt-4 border-t border-surface-container flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span class="font-label-md text-on-surface-variant">Low attendance event (Oct 12)</span>
+</div>
+</div>
+</div>
+</div>
+</div></div></main></div></body></html>
