@@ -20,6 +20,7 @@
     "zcatalyst-sdk-node": "^3.4.0"
   },
   "devDependencies": {
+    "autoprefixer": "^10.5.4",
     "eslint": "^8",
     "eslint-config-next": "14.2.5",
     "postcss": "^8",
