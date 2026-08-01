@@ -10,14 +10,13 @@
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.115.0",
-    "@modelcontextprotocol/sdk": "^1.30.0",
     "framer-motion": "^12.43.0",
-    "mcp-remote": "^0.1.38",
     "next": "^15.5.22",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "recharts": "^3.10.1",
-    "uuid": "^14.0.1"
+    "uuid": "^14.0.1",
+    "zcatalyst-sdk-node": "^3.4.0"
   },
   "devDependencies": {
     "eslint": "^8",
