@@ -22,15 +22,7 @@ export function AuthProvider({ children }) {
 
     const signup = async (role, name, email, password) => {
     try {
-      const response = await fetch('/api/auth/signup', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ role, name, email, password })
-      });
-      const data = await response.json();
-      if (!response.ok || data.error) throw new Error(data.error || 'Signup failed');
-      
-      // Redirect to signin after successful signup
+      // Bypassing database, instantly redirect to signin
       router.push(`/auth/signin?role=${role}`);
     } catch (err) {
       throw err;
@@ -39,20 +31,21 @@ export function AuthProvider({ children }) {
 
   const signin = async (role, email, password) => {
     try {
-      const response = await fetch('/api/auth/signin', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ role, email, password })
-      });
-      const data = await response.json();
-      if (!response.ok) throw new Error(data.error || 'Signin failed');
+      // Bypassing database, create mock user directly
+      const mockUser = {
+        id: `mock-user-${Date.now()}`,
+        name: email.split('@')[0],
+        email: email,
+        role: role,
+        xp: 0
+      };
       
-      setUser(data.user);
-      localStorage.setItem('edu_space_user', JSON.stringify(data.user));
+      setUser(mockUser);
+      localStorage.setItem('edu_space_user', JSON.stringify(mockUser));
       
       // Redirect based on role
-      if (data.user.role === 'admin') router.push('/admin');
-      else if (data.user.role === 'teacher') router.push('/teacher');
+      if (role === 'admin') router.push('/admin');
+      else if (role === 'teacher') router.push('/teacher');
       else router.push('/student');
     } catch (err) {
       throw err;
