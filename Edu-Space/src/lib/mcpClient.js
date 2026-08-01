@@ -17,6 +17,7 @@ export async function getMcpClient() {
   mcpTransport = new StdioClientTransport({
     command: "npx",
     args: [
+      "-y",
       "mcp-remote",
       "https://edu-space-60081095824.zohomcp.in/mcp/1edf6b911baa423f8bb187994af04fe2/message",
       "--transport",
