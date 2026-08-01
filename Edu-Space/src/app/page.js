@@ -30,13 +30,11 @@ export default function Login() {
           
           <div className="p-8 md:p-12 flex flex-col items-center relative z-10">
             <div className="mb-10 text-center">
-              <div className="w-32 h-32 mx-auto mb-6 flex items-center justify-center bg-surface-container-lowest rounded-full shadow-sm relative overflow-hidden">
-                <Image 
+              <div className="mx-auto mb-6 flex items-center justify-center bg-surface-container-lowest rounded-full shadow-sm relative overflow-hidden" style={{ width: '128px', height: '128px' }}>
+                <img 
                   alt="Edu-Space Logo" 
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuChneJwOhhP0NDgKMg1HHwb7EQWPxHka2xdxO1CnQRDBE6qak6sNwfmN8LO2kU9dMrwtNap0_5TA9n8d-2nKGH81OR5WW5A8dhiwOPXWQatqaD49tDd5bVVoF55RED_NofchdHVknJWZ2MU58D08teycbsnGkTaY6CE2Zc_eWzCzhhgDaYCHKiZC3djngZQndIKg_3B8TZdDfN32GDVgvdFqOuB7IKPeSMjXHh-7UfCleam-YikBLCSRg"
-                  fill
-                  className="object-contain p-4"
-                  unoptimized
+                  src="/logo.png"
+                  style={{ width: '100%', height: '100%', objectFit: 'contain', padding: '16px' }}
                 />
               </div>
               <h1 className="font-headline-xl text-on-surface mb-3">Welcome to Edu-Space</h1>
