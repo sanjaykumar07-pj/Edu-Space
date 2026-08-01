@@ -18,6 +18,8 @@ export default function Sidebar() {
       items: [
         { name: 'Dashboard', path: '/admin', icon: 'dashboard' },
         { name: 'Manage Teachers', path: '/admin/manage-teachers', icon: 'group' },
+        { name: 'Manage Students', path: '/admin/manage-students', icon: 'school' },
+        { name: 'Manage Admins', path: '/admin/manage-admins', icon: 'admin_panel_settings' },
         { name: 'Manage Classes', path: '/admin/manage-classes', icon: 'class' },
         { name: 'Attendance Overview', path: '/admin/attendance', icon: 'event_available' },
         { name: 'Academic Analytics', path: '/admin/analytics', icon: 'analytics' },

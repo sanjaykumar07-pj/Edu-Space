@@ -5,35 +5,37 @@ export async function GET() {
   try {
     const response = await callCatalystTool('CatalystbyZoho_Execute_Query', {
       body: {
-        query: "SELECT ROWID, name, email FROM Users WHERE role = 'student'"
+        query: "SELECT * FROM Users WHERE role = 'admin'"
       }
     });
     
-    const students = response.map(row => ({
+    const admins = response.map(row => ({
       id: row.Users.ROWID,
       name: row.Users.name,
-      email: row.Users.email
+      email: row.Users.email,
+      role: row.Users.role,
+      phone: row.Users.phone
     }));
 
-    return NextResponse.json(students);
+    return NextResponse.json(admins);
   } catch (error) {
-    console.error('Fetch students error:', error);
-    return NextResponse.json({ error: 'Failed to fetch students' }, { status: 500 });
+    console.error('Fetch admins error:', error);
+    return NextResponse.json({ error: 'Failed to fetch admins' }, { status: 500 });
   }
 }
 
 export async function POST(request) {
   try {
     const body = await request.json();
-    const { name, branch, degree, phone } = body;
+    const { name, phone } = body;
     
-    // Generate a placeholder email and password for student
+    // Generate a placeholder email and password for admin
     const email = `${name.toLowerCase().replace(/\s+/g, '.')}@edu-space.com`;
     const password = "password123";
 
     const response = await callCatalystTool('CatalystbyZoho_Insert_Rows', {
       body: [
-        { name, email, password, role: 'student', branch, degree, phone }
+        { name, email, password, role: 'admin', phone }
       ],
       path_variables: {
         id: "58391000000016001" // Users table ID
@@ -42,7 +44,7 @@ export async function POST(request) {
 
     return NextResponse.json({ success: true, id: response[0].ROWID });
   } catch (error) {
-    console.error('Add student error:', error);
-    return NextResponse.json({ error: 'Failed to add student' }, { status: 500 });
+    console.error('Add admin error:', error);
+    return NextResponse.json({ error: 'Failed to add admin' }, { status: 500 });
   }
 }
