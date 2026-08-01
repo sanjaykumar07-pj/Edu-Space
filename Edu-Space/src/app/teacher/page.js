@@ -136,7 +136,7 @@ export default function TeacherDashboard() {
                   <span className="material-symbols-outlined text-sm">cloud_upload</span>
                 </div>
                 <div className="bg-surface-container-low rounded-xl p-4 flex-1">
-                  <p className="font-body-sm text-on-surface"><span className="font-bold">Alex Johnson</span> submitted a project: "Math Portfolio"</p>
+                  <p className="font-body-sm text-on-surface"><span className="font-bold">Alex Johnson</span> submitted a project: &quot;Math Portfolio&quot;</p>
                   <p className="text-xs text-on-surface-variant mt-1">2 hours ago</p>
                 </div>
               </div>
@@ -146,7 +146,7 @@ export default function TeacherDashboard() {
                   <span className="material-symbols-outlined text-sm">psychology</span>
                 </div>
                 <div className="bg-surface-container-low rounded-xl p-4 flex-1">
-                  <p className="font-body-sm text-on-surface"><span className="font-bold">Sam Lee</span> completed quiz "Algebra Basics" (Score: 50%)</p>
+                  <p className="font-body-sm text-on-surface"><span className="font-bold">Sam Lee</span> completed quiz &quot;Algebra Basics&quot; (Score: 50%)</p>
                   <p className="text-xs text-on-surface-variant mt-1">5 hours ago</p>
                 </div>
               </div>

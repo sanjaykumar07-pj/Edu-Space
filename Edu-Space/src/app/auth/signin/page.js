@@ -89,7 +89,7 @@ function SignInForm() {
 
       <div className="mt-8 text-center">
         <p className="text-on-surface-variant font-body-sm">
-          Don't have an account?{' '}
+          Don&apos;t have an account?{' '}
           <Link href={`/auth/signup?role=${role}`} className="text-primary font-bold hover:underline">
             Create an account
           </Link>
