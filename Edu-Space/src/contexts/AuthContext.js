@@ -28,7 +28,7 @@ export function AuthProvider({ children }) {
         body: JSON.stringify({ role, name, email, password })
       });
       const data = await response.json();
-      if (!response.ok) throw new Error(data.error || 'Signup failed');
+      if (!response.ok || data.error) throw new Error(data.error || 'Signup failed');
       
       // Redirect to signin after successful signup
       router.push(`/auth/signin?role=${role}`);

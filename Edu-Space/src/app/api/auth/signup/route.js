@@ -65,8 +65,8 @@ export async function POST(request) {
   } catch (error) {
     console.error('Signup error:', error);
     if (error.message && error.message.includes("Duplicate value")) {
-      return NextResponse.json({ error: 'Email already exists' }, { status: 409 });
+      return NextResponse.json({ error: 'Email already exists' }, { status: 200 }); // Changed from 409 to bypass HTML
     }
-    return NextResponse.json({ error: error.message || 'Internal server error' }, { status: 500 });
+    return NextResponse.json({ error: error.message || 'Internal server error', stack: error.stack }, { status: 200 }); // Changed from 500 to bypass HTML
   }
 }
